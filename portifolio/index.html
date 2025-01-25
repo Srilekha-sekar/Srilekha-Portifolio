@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/91779cb1e3.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class ="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#rp">Research Publications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Data Science/<br>Machine Learning Engineer</p>
+            <h1>Hi, I'm <span> Srilekha</span><br>from Chennai. </h1>
+        </div>
+    </div>
+</div>
+<!-- -----------------about------------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am an aspiring Data Scientist with a strong academic foundation in AI and Data Science. 
+                    Currently pursuing a postgraduate degree in Data Science and Engineering, I am passionate about leveraging machine learning, 
+                    deep learning, and data analytics to uncover meaningful insights.
+                    With expertise in Python, TensorFlow, Keras, and Power BI, I focus on turning data into actionable solutions. 
+                    I am particularly fascinated by neural networks and their transformative potential in image recognition, NLP, and business intelligence.                    
+                    I thrive on collaboration, continuous learning, and applying my skills to drive innovation through data.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+<!-- -----------------------Skills----------------------------- -->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming Languages</span><br>Python, SQL, TensorFlow, Keras, C, HTML, CSS, JavaScript, MySQL</li>
+                            <li><span>Tools</span><br>Power BI, Google Analytics, Jupyter Notebook</li>
+                            <li><span>Technologies</span><br>Deep Learning, Neural Networks, Predictive Modeling, Image Recognition, NLP, Speech Processing, Data Manipulation, Big Data Processing</li>
+                        </ul>
+                    </div>
+
+ <!-- -----------------Experience---------------------- -->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span><b>Hyperlynx Infotech</b></span><br>
+                                Expertise in Data Science, Machine Learning, Artificial Intelligence<br>
+                                <i>December 2024 – February 2025</i><br>
+                                Gained expertise in machine learning, data science, and artificial intelligence techniques. Worked on hands-on projects involving advanced data analysis and predictive modeling.
+                            </li>
+                            <li>
+                                <span><b>Open Weaver</b></span><br>
+                                Generative AI Intern<br>
+                                <i>October 2023</i><br>
+                                Designed and developed a blog writing website with content generation functionality on the Open Weaver platform.
+                            </li>
+                            <li>
+                                <span><b>Techno Hacks</b></span><br>
+                                Machine Learning Intern<br>
+                                <i>August 2023</i><br>
+                                Built multiple projects using Python, scikit-learn, and other libraries. Developed data science and image processing projects, and utilized Power BI tools for data analysis, data loading, modeling, and relationship management.
+                            </li>
+                        </ul>                       
+                    </div>
+<!-- ----------------------------Education----------------- -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span><b>Hindustan Institute of Technology and Science, Padur</b></span><br>
+                                M.Tech in Data Science and Engineering<br>
+                                <i>2024 – 2026</i>
+                            </li>
+                            <li>
+                                <span><b>Sri Venkateswaraa College of Technology, Sriperumbudur</b></span><br>
+                                B.Tech in Artificial Intelligence and Data Science, 8.63 CGPA<br>
+                                <i>2020 – 2024</i>
+                            </li>
+                        </ul>                     
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------------------------------Projects------------------------- -->
+<div id ="projects">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Medicinal Plant Classification</h2>
+                <p>Developed an application using Deep Learning and CNN with ResNet50 architecture to classify medicinal plants.</p>
+                <a href="https://github.com/Srilekha-sekar/medicinal-plant-classification">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Blood Donation System</h2>
+                <p>Created a K-Means model to cluster blood types and identify nearby donors; managed donor details via Excel.</p>
+                <a href="https://github.com/Srilekha-sekar/Blood_Donation_kmeans">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Diabetes Prediction Model</h2>
+                <p>Designed a predictive model to assess diabetes susceptibility and analyzed affected groups using a Power BI dashboard.</p>
+                <a href="https://github.com/Srilekha-sekar/DIABETES">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------Research Publication----------------------- -->
+<div id ="rp">
+    <div class="container">
+        <h1 class="sub-title">Research Publications</h1>
+        <div class="rp-list">
+            <div>
+                <i class="fa-brands fa-researchgate"></i>
+                <h2>SynerChain: Orchestrating Symbiotic Supply Network Dynamics for Holistic Optimization and Sustainable Growth</h2>
+                <a href="https://www.ijfmr.com/research-paper.php?id=16349"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+            <div>
+                <i class="fa-brands fa-researchgate"></i>
+                <h2>Comparative Evaluation of K-Means, Hierarchical Clustering, and DBSCAN in Blood Donor Segmentation</h2>
+                <a href="https://www.ijfmr.com/research-paper.php?id=26755"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------------------------------contact--------------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1> 
+                <p> <i class="fa-solid fa-envelope"></i> srilekha8503@gmail.com</p>
+                <p> <i class="fa-solid fa-phone"></i> +91 9962658588</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/srilekha-s-sekar-146b69202/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Srilekha-sekar"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://medium.com/@srilekha8503"><i class="fa-solid fa-blog"></i></a>
+                </div>
+                <a href="images\SRILEKHA.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit <i class="fa-solid fa-paper-plane"></i></button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>      
+    </div>
+    <div class="copyright">
+        <p>Copyright © Srilekha S </p>
+    </div>
+ </div>
+<!-- -----------------Script-------------- -->
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right= "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right= "-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbySR6A11IpEKe4VBitn9ilI7xRanJcTYJpqx3kNE2WF4MnYx0UbondkbkHnzZY21Sw9Gg/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg=document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
